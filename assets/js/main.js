@@ -29,7 +29,21 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER HOME ===============*/
+const swiperHome = new Swiper('.home__swiper', {
+   loop: true, 
+   speed: 800, 
+   effect: 'fade', 
+   parallax: true,
 
+   pagination: {
+      el: '.swiper-pagination', 
+      clickabe: true,
+   },
+   autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false,
+   }
+})
 
 /*=============== CHANGE HEADER STYLES ===============*/
 
